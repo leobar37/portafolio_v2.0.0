@@ -1,0 +1,32 @@
+.box {
+  // height: 100vh;
+  margin-top: 5rem;
+}
+.box-right {
+  display: flex;
+  padding: 4.5rem 0.8rem;
+  justify-content: flex-end;
+  align-items: center;
+  .box__text {
+    h3 {
+      color: #ffed87;
+      font-size: 2rem;
+      font-weight: 300;
+      &::first-letter {
+        text-transform: uppercase;
+      }
+    }
+    color: white;
+    max-width: 500px;
+    padding: 0.8rem 1.3rem;
+    background: #0c0c0c;
+    box-shadow: -5px -5px 9px rgba($color: white, $alpha: 0.1),
+      5px 5px 9px rgba($color: #675a5a, $alpha: 0.8);
+    p {
+      text-align: left;
+      text-justify: distribute;
+      line-height: 25px;
+      padding: 1rem 0.3rem;
+    }
+  }
+}

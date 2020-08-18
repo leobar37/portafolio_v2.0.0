@@ -1,0 +1,49 @@
+@import "../../../../../variables.scss";
+.galery {
+  max-width: 450px;
+  margin-top: 4.2rem;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  max-height: 50vh;
+}
+.title {
+  color: #ffed87;
+  font-weight: 300;
+  text-align: center;
+  &::first-letter {
+    text-transform: uppercase;
+  }
+}
+.galery::-webkit-scrollbar {
+  width: 1rem;
+}
+.galery::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px white;
+}
+.galery::-webkit-scrollbar-thumb {
+  background-color: #ffed87;
+}
+figure {
+  max-width: 100%;
+  img {
+    width: 100%;
+  }
+}
+.card {
+  max-width: 350px;
+  text-align: center;
+  display: block;
+  margin-bottom: 50px;
+  p {
+    padding: 0.5rem 0.8rem;
+    text-align: center;
+    font-size: 0.9rem;
+    line-height: 25px;
+    color: white;
+  }
+  .btn {
+    @extend %button;
+    font-size: 0.9rem;
+    padding: 0.4 1.5rem;
+  }
+}

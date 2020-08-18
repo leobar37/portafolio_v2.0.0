@@ -1,0 +1,29 @@
+$color-secondary: #ffed87;
+$color-white: #ffffff;
+$color-primary: #85aeff;
+
+$font-lato: "Lato", sans-serif;
+$font-sans: "Open Sans", sans-serif;
+$font-roboto: "Roboto", sans-serif;
+$shadow-card: 7px 19px 33px -9px rgba(0, 0, 0, 0.44);
+$space_items: 10px;
+$fonts-size: (
+  "big": 3rem,
+  "paragraph": 0.8rem,
+  "menu": 1.1rem,
+  "medium": 1.8rem,
+  "small": 0.9rem,
+  "second": 1.3rem,
+);
+
+%button {
+  transition: transform 0.2s ease-in;
+  border: 2px solid white;
+  padding: 0.9rem 0.5rem;
+  background: transparent;
+  color: $color-white;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.05);
+  }
+}

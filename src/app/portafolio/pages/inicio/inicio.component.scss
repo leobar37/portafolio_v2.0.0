@@ -1,0 +1,77 @@
+@import "../../../../variables.scss";
+.container {
+  .box {
+    padding-top: 4rem;
+    margin-left: 5%;
+  }
+}
+.box-left {
+  color: $color-white;
+  .text {
+    margin-block-start: 20%;
+    span {
+      color: rgba($color: #ffff, $alpha: 0.6);
+    }
+    h2 {
+      font-size: 3rem;
+      font-family: $font-lato;
+      b {
+        color: $color-secondary;
+      }
+    }
+    p {
+      font-weight: 300;
+      line-height: 30px;
+      font-size: 1rem;
+    }
+    .btn {
+      @extend %button;
+    }
+  }
+}
+.box-right {
+  figure {
+    width: 30vw;
+    // max-width: 1000px;
+    img {
+      width: 100%;
+    }
+  }
+}
+.social {
+  position: absolute;
+  top: calc(80% - 3rem);
+  left: 11.8%;
+  ul a {
+    padding: 0.2rem 0.8rem;
+  }
+  ul {
+    a i {
+      font-size: 3rem;
+      color: $color-white;
+      &:hover {
+        transform: scale(1.08);
+      }
+    }
+  }
+}
+footer {
+  position: absolute;
+  bottom: -4rem;
+  width: 100%;
+
+  position: relative;
+  p {
+    text-align: center;
+  }
+  span {
+    position: absolute;
+    right: 0;
+    top: -0.5rem;
+    right: 4rem;
+  }
+  p,
+  span {
+    color: white;
+  }
+}
