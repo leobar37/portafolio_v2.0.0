@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import * as animate from 'angular-animations';
+
 @Component({
   selector: 'app-skills',
   templateUrl: './skills.component.html',
@@ -9,5 +10,12 @@ import * as animate from 'angular-animations';
 export class SkillsComponent implements OnInit {
   constructor() {}
 
+  @Output()
+  propagar = new EventEmitter<boolean>();
+
   ngOnInit(): void {}
+  public handleModal(event: Event) {
+    event.preventDefault();
+    this.propagar.emit(true);
+  }
 }

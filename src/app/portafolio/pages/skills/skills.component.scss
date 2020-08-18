@@ -9,3 +9,14 @@
   justify-content: center;
   align-items: center;
 }
+
+.mute {
+  position: fixed;
+  top: 1rem;
+  left: 1.8rem;
+  text-decoration: none;
+  i {
+    color: black;
+    font-size: 2rem;
+  }
+}

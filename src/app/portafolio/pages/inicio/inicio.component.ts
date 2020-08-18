@@ -8,7 +8,7 @@ import { DOCUMENT } from '@angular/common';
   animations: [],
 })
 export class InicioComponent implements OnInit {
-  public showModal = false;
+  public showModal = true;
   constructor(@Inject(DOCUMENT) private document: Document) {}
 
   ngOnInit(): void {}
